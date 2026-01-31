@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gửi Em – Lời Xin Lỗi Từ Anh ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Card đầu */
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 420px;
+      padding: 30px 25px 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      position: relative;
+      animation: fadeIn 1.2s ease;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    /* Ảnh giao diện đầu */
+    .main-img {
+      width: 30%;
+      height: 30%;
+      object-fit: cover;
+      border-radius: 15px;
+      margin: 15px 0;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .fade-out {
+      opacity: 0;
+      transform: scale(0.9);
+      pointer-events: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      color: #ff5e78;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .heart {
+      font-size: 48px;
+      animation: pulse 1.2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+      margin: 15px 0;
+      font-size: 16px;
+    }
+
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .yes {
+      background: #ff5e78;
+      color: white;
+    }
+
+    .yes:hover {
+      background: #ff3b5f;
+      transform: scale(1.05);
+    }
+
+    .no {
+      background: #ddd;
+      color: #333;
+      position: relative;
+    }
+
+    .message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff3b5f;
+  min-height: 24px;
+  transition: all 0.3s ease;
+}
+
+    /* Trái tim bay */
+    .floating-heart {
+      position: absolute;
+      color: #ff5e78;
+      font-size: 18px;
+      animation: floatUp 4s linear forwards;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-250px) scale(1.5);
+      }
+    }
+
+    /* Màn hình thứ 2 */
+    .final-screen {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 1.2s ease;
+    }
+
+    .final-screen.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .final-card {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    .final-card img {
+      width: 30%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .final-card h2 {
+      color: #ff5e78;
+      margin-bottom: 10px;
+    }
+    .zoom-fade {
+  animation: zoomFade 1s ease forwards;
+}
+
+@keyframes zoomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  30% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- Card chính -->
+  <div class="card" id="mainCard">
+
+    <div class="heart">❤️</div>
+
+    <!-- ẢNH GIAO DIỆN ĐẦU (ĐỔI Ở ĐÂY) -->
+    <img src="43097dc8-bd7d-4a7b-80da-fcf4be4e1e24.jfif" class="main-img" alt="ảnh anhhh">
+
+    <h1>Anh chin nhỗi em bé ạ</h1>
+
+    <p>
+      Anh xin lỗi, vì anh đùa quá trớn làm em bé thấy khó chịu
+    </p>
+
+    <p>
+      em bé đừng giận anh nữa nhó, từ sau anh sẽ hong đùa như vậy nứa
+    </p>
+
+    <p><b>Ebe bỏ qua cho anh nhó</b></p>
+
+    <div class="buttons">
+      <button class="yes" onclick="forgive()">Thoi được ròi</button>
+      <button class="no" id="noBtn"
+        onmouseover="runAway()"
+        onclick="runAway()"
+        ontouchstart="runAway()">Cút</button>
+    </div>
+
+    <div class="message" id="message"></div>
+  </div>
+
+
+  <!-- Màn hình sau khi tha -->
+  <div class="final-screen" id="finalScreen">
+
+    <div class="final-card">
+
+      <img src="559dd961-f881-4a8a-8a9d-f13bbacb4efe.jfif" alt="Ảnh của tụi mình ❤️" width="30%" height="30%">
+
+      <h2>Anh yêu em bé nhiều lắmmmmmmm</h2>
+
+      <p>
+        cảm ơn em bé đã bỏ qua choa anh, anh hứa sẽ hong đùa như vậy thêm nứa. anh iu em bé nhìu nhắmmmmm
+      </p>
+
+    </div>
+  </div>
+
+
+  <script>
+    let hoverCount = 0;
+    const message = document.getElementById("message");
+    const card = document.getElementById("mainCard");
+    const finalScreen = document.getElementById("finalScreen");
+
+    function forgive() {
+
+      message.innerHTML =
+        "Hí hí hí hí hí, cảm ơn em beeeee ❤️ Anh yêu em bé nhìu lắm ạaaa";
+
+      createHearts();
+
+      card.classList.add("fade-out");
+
+      setTimeout(() => {
+        finalScreen.classList.add("show");
+      }, 1000);
+    }
+
+
+    function runAway() {
+
+  const btn = document.getElementById("noBtn");
+
+  const texts = [
+    "Đừng màaa 😭",
+    "Anh sai ròiiiii 🥺",
+    "Em bé đừng giận anh nứaaaaa",
+    "Em bé bỏ qua cho anhhhhh",
+    "Anh chin nhỗiiiii",
+    "em béeeeee 🥺"
+  ];
+
+  const random = texts[Math.floor(Math.random() * texts.length)];
+
+  // Reset animation
+  message.classList.remove("zoom-fade");
+  void message.offsetWidth; // trick reset animation
+
+  // Set text + animate
+  message.innerHTML = random;
+  message.classList.add("zoom-fade");
+
+
+  // Nút chạy trốn
+  const maxX = window.innerWidth - btn.offsetWidth - 20;
+  const maxY = window.innerHeight - btn.offsetHeight - 20;
+
+  const x = Math.random() * maxX;
+  const y = Math.random() * maxY;
+
+  btn.style.position = "fixed";
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+}
+
+
+    function createHearts() {
+
+      for (let i = 0; i < 25; i++) {
+
+        const heart = document.createElement("div");
+        heart.classList.add("floating-heart");
+        heart.innerHTML = "❤️😘🫶💕";
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.bottom = "-20px";
+        heart.style.fontSize = 14 + Math.random() * 20 + "px";
+        heart.style.animationDuration = 3 + Math.random() * 2 + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 5000);
+      }
+    }
+
+  </script>
+
+</body>
+</html>
